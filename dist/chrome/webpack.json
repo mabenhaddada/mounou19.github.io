@@ -1,0 +1,94 @@
+{
+  "errors": [
+    "/Users/medaminebh/Desktop/Comptoir/Mission_1_PNB_Rosa_Parks/PWA/EER/preact-hn/src/routes/List/index.tsx\n[tsl] ERROR in /Users/medaminebh/Desktop/Comptoir/Mission_1_PNB_Rosa_Parks/PWA/EER/preact-hn/src/routes/List/index.tsx(39,16)\n      TS2540: Cannot assign to 'uuid' because it is a constant or a read-only property.",
+    "Unexpected token (196:6)",
+    "Unexpected token (1519:26)"
+  ],
+  "warnings": [],
+  "publicPath": "/dist/chrome/",
+  "assetsByChunkName": {
+    "ItemHome": "bundle.ItemHome.0244786ed9f036fde9d4.js",
+    "AboutHome": "bundle.AboutHome.2d8268d439d9ebc8f9c4.js",
+    "UserHome": "bundle.UserHome.89652ba93b207b2815a7.js",
+    "application": [
+      "bundle.application.03fdf78d35cb06165282.js",
+      "bundle.application.03fdf78d35cb06165282.css"
+    ]
+  },
+  "assets": [
+    {
+      "name": "bundle.ItemHome.0244786ed9f036fde9d4.js",
+      "size": 7724,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "ItemHome"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "bundle.AboutHome.2d8268d439d9ebc8f9c4.js",
+      "size": 1647,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "AboutHome"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "bundle.UserHome.89652ba93b207b2815a7.js",
+      "size": 511,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "UserHome"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "bundle.application.03fdf78d35cb06165282.js",
+      "size": 70146,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "application"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "bundle.application.03fdf78d35cb06165282.css",
+      "size": 3139,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "application"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "manifest.json",
+      "size": 509,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "application": {
+      "chunks": [
+        3
+      ],
+      "assets": [
+        "bundle.application.03fdf78d35cb06165282.js",
+        "bundle.application.03fdf78d35cb06165282.css"
+      ]
+    }
+  }
+}
