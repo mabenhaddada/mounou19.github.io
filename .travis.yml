@@ -1,0 +1,19 @@
+language: node_js
+node_js: lts/*
+sudo: false
+before_install:
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.27.5
+- export PATH=$HOME/.yarn/bin:$PATH
+cache:
+  yarn: true
+install:
+- yarn install
+script:
+- yarn start
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: 75ce8400b765eb4a806589961e003377e4ddb1dd  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
