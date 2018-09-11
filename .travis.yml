@@ -11,11 +11,9 @@ install:
 - yarn add brotli
 - yarn add @gfx/zopfli
 - ls -la node_modules/brotli
-- ls -la node_modules/brotli/bin
+- ls -la node_modules/brotli/build
 - ls -la node_modules/@gfx
-- ls -la node_modules/@gfx/bin
 - ls -la node_modules/@gfx/zopfli
-- ls -la node_modules/@gfx/zopfli/bin
 script:
 #- yarn bundle:prod && yarn run start
 deploy:
