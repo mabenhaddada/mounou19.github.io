@@ -1,15 +1,15 @@
 language: node_js
-node_js: '6.9.1'
+node_js: '8.9.1'
 sudo: false
 before_install:
-- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.27.5
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.9.4
 - export PATH=$HOME/.yarn/bin:$PATH
 cache:
   yarn: true
 install:
 - yarn install
-- yarn global add brotli
-- yarn global add node-zopfli
+- yarn add brotli
+- yarn add node-zopfli
 script:
 - yarn bundle:prod && yarn run start
 deploy:
