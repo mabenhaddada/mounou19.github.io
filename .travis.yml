@@ -7,11 +7,11 @@ before_install:
 cache:
   yarn: true
 install:
-- yarn install
+- sudo yarn install
 - sudo add-apt-repository ppa:jonathonf/python-3.6 -y && sudo apt-get update && sudo apt-get install python3.6 && sudo pip install --upgrade pip && sudo pip install brotli
 - sudo pip install zopfli
 script:
-- yarn bundle:prod && yarn run startsc
+- sudo yarn bundle:prod && sudo yarn run startsc
 deploy:
   provider: pages
   skip-cleanup: true
