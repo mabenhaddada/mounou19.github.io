@@ -13,7 +13,7 @@ install:
 - sudo add-apt-repository ppa:jonathonf/python-3.6 -y && sudo apt-get update && sudo apt-get install python3.6 && sudo pip install --upgrade pip && sudo pip install brotli
 - sudo pip install zopfli
 script:
-- sudo yarn bundle:prod && sudo yarn run start
+- yarn bundle:prod && yarn run start
 deploy:
   provider: pages
   skip-cleanup: true
