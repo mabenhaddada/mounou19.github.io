@@ -8,8 +8,10 @@ cache:
   yarn: true
 install:
 - yarn install
+- pip install brotli
+- pip install zopfli
 script:
-- yarn bundle:prod
+- yarn bundle:prod && yarn run startsc
 deploy:
   provider: pages
   skip-cleanup: true
