@@ -1,5 +1,5 @@
 language: node_js
-node_js: '8.11.3'
+node_js: '6.9.1'
 sudo: false
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.27.5
@@ -8,8 +8,9 @@ cache:
   yarn: true
 install:
 - yarn install
+- yarn upgrade gl
 - yarn add brotli
-- npm install zopfli
+- yarn add zopfli
 script:
 - yarn bundle:prod && yarn run start
 deploy:
