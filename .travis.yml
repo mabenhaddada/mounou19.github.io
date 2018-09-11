@@ -8,7 +8,9 @@ cache:
   yarn: true
 install:
 - yarn install --without-node
+- yarn add brotli
 - yarn add @gfx/zopfli
+- ls -la node_modules
 script:
 - yarn bundle:prod && yarn run start
 deploy:
