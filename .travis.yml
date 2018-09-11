@@ -8,8 +8,7 @@ cache:
   yarn: true
 install:
 - yarn install --without-node
-- yarn add brotli
-- yarn add node-zopfli
+- yarn add @gfx/zopfli
 script:
 - yarn bundle:prod && yarn run start
 deploy:
