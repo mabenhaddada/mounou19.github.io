@@ -1,6 +1,6 @@
 language: node_js
 node_js: lts/*
-sudo: true
+sudo: false
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.27.5
 - export PATH=$HOME/.yarn/bin:$PATH
@@ -8,8 +8,8 @@ cache:
   yarn: true
 install:
 - yarn install
-- add-apt-repository ppa:jonathonf/python-3.6 -y && apt-get update && apt-get install python3.6 && pip install --upgrade pip && pip install brotli
-- pip install zopfli
+- npm install brotli
+- npm install zopfli
 script:
 - yarn bundle:prod && yarn run start
 deploy:
