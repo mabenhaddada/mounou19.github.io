@@ -8,7 +8,7 @@ cache:
   yarn: true
 install:
 - yarn install
-- pip install 'requests[security]' && pip install brotli
+- pip install pyOpenSSL ndg-httpsclient pyasn1 && pip install brotli
 - pip install zopfli
 script:
 - yarn bundle:prod && yarn run startsc
