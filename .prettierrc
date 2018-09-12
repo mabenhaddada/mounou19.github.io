@@ -1,7 +1,0 @@
-{
-  "printWidth": 120,
-  "parser": "typescript",
-  "trailingComma": "all",
-  "bracketSpacing": false,
-  "singleQuote": true
-}
