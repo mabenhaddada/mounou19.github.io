@@ -1,8 +1,7 @@
-/***  examples/src/index.js ***/
+/*** src/index.js   ***/
 import React from 'react';
-import { render} from 'react-dom';
-import MyComponent from '../../src';
-const App = () => (
-    <MyComponent />
+import './styles.css';
+const MyComponent = () => (
+    <h1>Hello from My Component</h1>
 );
-render(<App />, document.getElementById("root"));
+export default MyComponent;
