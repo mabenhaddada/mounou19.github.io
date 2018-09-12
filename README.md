@@ -1,38 +1,90 @@
-## Preact Hacker News Example
+<p align="center">
+    <img alt="Preact" title="Preact" src="https://s3.postimg.org/i78nzh56b/preact_minimal.jpg"/>
+</p>
 
-See this application live at: https://hn.kristoferbaxter.com
 
-This is an example of a PWA built using Preact, Webpack, and some small opinions.
-*Please do not think of this as the way to build your application*. 
-Instead, view this as an example of some concepts used in modern web applications (sw, h2, h2push).
+# :rocket: preact-minimal
+Minimal preact structure. 
 
-Made with _kindness_ in California. 🏄
+[![Build Status](https://travis-ci.org/aganglada/preact-minimal.svg?branch=master)](https://travis-ci.org/aganglada/preact-minimal)
 
-## Installation
+[Preact](https://github.com/developit/preact) is just soooooo fast! :zap: :zap: :zap: 
 
-1. Install yarn
-    * https://yarnpkg.com/en/docs/install
-2. Install h2o Proxy (to allow for local h2 and h2 push)
-    * Depends on your OS. Tend to use 'brew' on MacOS -- 'brew update; brew install h2o'
-3. Install Brotli and Zopfli CLI
-    * Again, depends on your OS. Typically just use 'brew', 'brew update; brew install brotli; brew install zopfli'
-    * https://github.com/google/brotli
-    * https://github.com/google/zopfli
-4. Install Yarn Dependencies
-    * yarn install
-5. Run Locally
-    * yarn start (chrome only)
-    * yarn bundle:prod; yarn run start (all browsers)
-6. Access using your favorite browser
-    * https://localhost:5443
+But when you have an idea and want to start coding right away, then it becomes really hard and time 
+consuming to setup and have your application ready to start your development.
 
-## Details
+**preact-minimal** comes to save your time providing you with the minimal and sufficient kit of
+tools you need.
 
-I've focused mostly on first initial load performance, with the small caveat of using Webpack instead of Rollup. I'd like the route based code splitting to provide a extensible model for keeping initial view rendering costs low.
+### What's included?
 
-In the future there are plenty of things to do:
-1. Write a Webpack plugin to allow for split css files based on packages.
-2. Internationalization/Localization, including RTL layout.
-3. Support AppCache (even though it's kind of a jerk)
-4. Allow for posting comments!
-5. FIX LOTS OF BUGS! ZOMG SO MANY BUGS!
+* [preact](https://github.com/developit/preact)
+* [preact-router](https://github.com/developit/preact-router)
+* [webpack](https://webpack.js.org)
+* [babel](https://babeljs.io/)
+* [cssnext](http://cssnext.io/)
+
+### Demo 
+
+https://preact-minimal.aganglada.com
+
+### Want to start right now?
+
+> Follow this steps 
+
+```bash
+git clone git@github.com:aganglada/preact-minimal.git
+cd preact-minimal
+npm i
+```
+
+#### Run the dev server
+
+```bash
+npm run dev
+```
+
+Buala! You can start developing now on http://localhost:4000
+
+#### Build assets for production
+
+```bash
+npm run prod
+```
+
+Running this command will create an `assets` folder that you can expose to your server.
+ 
+#### Production mode in local
+
+```bash
+npm run start
+```
+
+You can check on http://localhost:8080
+
+### Preact Developer Tools
+
+You can inspect and modify the state of your Preact UI components at runtime using the [React Developer Tools](https://github.com/facebook/react-devtools) browser extension.
+
+1. Install the [React Developer Tools](https://github.com/facebook/react-devtools) extension
+2. [Import the `preact/devtools`](src/index.js#L21) module in your app
+3. Reload and go to the 'React' tab in the browser's development tools
+
+### Coming soon
+
+* Docs
+* [Styled components?](https://github.com/aganglada/preact-minimal/issues/4)
+* Your suggestions
+
+
+### Contributing
+
+I would love to see you contributing to preact-minimal, also by giving feedback.
+If you think something is missing, [create a new issue](https://github.com/aganglada/preact-minimal/issues).
+
+[Pull request](https://github.com/aganglada/preact-minimal/pulls) are more than welcome ❤️️
+
+
+### License
+
+MIT
